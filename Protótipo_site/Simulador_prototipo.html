@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Save Fruit</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <style>
+        p {
+            color: #006666;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .btn {
+
+            border: solid 1px transparent;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 6px 12px
+        }
+
+
+
+        .btn-calculo {
+            background: #00FFCC;
+            border-color: #1E90FF;
+
+
+        }
+
+        .btn-primary {
+            background: #00FFFF;
+            border-color: #4169e1;
+
+
+        }
+
+        h1 {
+            color: #009999;
+        }
+
+
+        body {
+            background-color: #dddddd;
+        }
+
+        div {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #007700;
+            margin-top: 20px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="http://4.bp.blogspot.com/_XWODQSwuTeg/SX5B1zEQA_I/AAAAAAAAAQs/259vHlXtKKM/s400/cifrao.png" alt=""
+        style="margin-right: 80%;width: 50px;">
+    <h1>Simulador de economia</h1> <br>
+    <div>
+        <p>Utilizar nosso sistema integrado de controle de temperatura irá <br>
+            lhe proporcionar um melhor gerenciamento e controle no transporte, <br>
+            garantindo a qualidade de seus produtos, com o objetivo de diminuir <br>
+            o prejuízo com o desperdício e assim alavancando seu lucro! <br>
+            Confira abaixo em nosso simulador :</p>
+    </div>
+
+    <form>
+        <p> Seu nome </p><input type="text" id="nome" style="text-align: center"> <br>
+        <p> Qual o valor em frutas é transportado por mês?</p> <input id="valor_frutas" type="number"
+            style="text-align: center"> <br>
+        <p>Qual a porcentagem de perda desses alimentos durante o transporte ?</p>
+
+        <select id="porcentagem">
+            <option value="">--Selecione--</option>
+            <option value="0.1">Perda de 10%</option>
+            <option value="0.2">Perda de 20%</option>
+            <option value="0.3">Perda de 30%</option>
+            <option value="0.4">Perda de 40%</option>
+            <option value="0.5">Perda de 50%</option>
+            <option value="0.6">Perda de mais de 50%</option>
+
+
+
+        </select> <br>
+        <br>
+        <br>
+        <button class="btn btn-calculo btn-primary" type="button" onclick="calculo()">Calcular Economia!</button>
+        <div id="div_eco"></div>
+
+
+    </form>
+    <img src="http://4.bp.blogspot.com/_XWODQSwuTeg/SX5B1zEQA_I/AAAAAAAAAQs/259vHlXtKKM/s400/cifrao.png" alt=""
+        style="margin-left: 80%; width: 50px">
+
+
+
+
+</body>
+
+</html>
+<script>
+
+    function calculo() {
+        //---Primeira variável calcula o valor da mensalidade, nosso ganho será de 7% em cima do valor transportado pelo cliente--//
+        var mensalidade = valor_frutas.value * 0.07;
+        var gasto = mensalidade * 12; //--Segunda variável calcula o valor mensal aplicado no período anual--//
+        var ganho = (((valor_frutas.value * porcentagem.value) * 12) - gasto); //--Terceira variável revela o valor economizado, ou seja, a porcentagem que o cliente tinha de perda, danificação das frutas aplicado no período anual - a mensalidade--//
+
+        div_eco.innerHTML = `Olá, ${nome.value}, você irá economizar R$ ${ganho.toFixed(2)} por ano
+ e irá pagar apenas R$ ${mensalidade.toFixed(2)} por mês`;
+
+
+    }
+
+
+</script>

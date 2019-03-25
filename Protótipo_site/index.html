@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project Save Fruits - Monitoramento de temperatura das frutas</title>
+
+  <!--Icone do Favicon-->
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <!-- relaciona os arquivos .css com à página principal-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<!--Plano de fundo do site ......-->
+
+<body
+  style="background-color: #dddddd; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+  <header>
+
+    <!--Criação do menu responsivo-->
+    <input type="checkbox" id="btn_menu">
+    <label for="btn_menu">&#9776;</label>
+    <nav class="menu">
+
+
+      <!--Lista do menu-->
+      <ul>
+        <li><a href="#home-box">Home</a></li>
+        <li><a href="Simulador_prototipo.html" target="blank">Simulador</a></li>
+        <li><a href="#sobre-box">Sobre</a></li>
+        <li><a href="#cadastro-box1">Cadastro</a></li>
+        <li><a href="#login-box">Login</a></li>
+      </ul>
+
+      <body>
+
+    </nav>
+  </header>
+
+
+  <img src="logo.jpg" alt="">
+
+  <div id="Home-box">
+
+
+    <h2>Como funciona nosso produto?</h2>
+
+    O projeto Save Fruits vai ser um sensor que tem como principal função auxiliar a transportadora ou dono da carga,
+    durante o transporte a monitorar <br>
+    e controlar à temperatura e umidade da fruta através da internet Online. Aqui no site ao escolher o produto que está
+    transportando, ele irá disponibilizar os <br>
+    dados da temperatura e umidade para o produto que foi especificado, isso simplesmente com poucos cliques, sendo que
+    depois de configurado o sistema de <br>
+    refrigeração manterá a temperatura ideal até que seja encerrado à viagem.
+    <br><br>
+
+  
+    <img src="img/home.jpg" alt="" style="margin-left: auto; margin-right: auto; width: 50%; height: 50%">
+  
+  </div>
+
+
+
+  <!--Informações sobre a empresa-->
+  <h2>História da Empresa:</h2>
+
+  <div id="sobre-box">
+
+
+    A Save Fruits – foi criada em 01 de março de 2019, pelos alunos da faculdade Band Tec.
+    A origem da empresa ocorreu por meio de um projeto que no qual <br> o grupo de alunos estavam envolvidos, que tinha
+    como concepção utilizar a tecnologia para prover soluções mais eficácia ao Cliente. <br>
+    A experiencia que tiveram durante 2 anos de estudo, permitiu-lhe desenvolver um sensor que tem como função e
+    utilidade, monitorar frutas durante seu percurso de colhimento <br> até as grandes metrópoles de alimentos, fazendo
+    com
+    que tenha uma grande redução das percas e prejuízos causados, <br> que se tornou o grande diferencial para poderem
+    laçar-se nesta área.
+    </p>
+
+    <h4>Missão:</h4>
+    <p> Prover Soluções de Tecnologia e inovação, atender às necessidades de seus clientes, na região brasileira, com
+      qualidade, confiabilidade e custos adequados a seus negócios.
+    </p>
+    <h4>Visão:</h4>
+    <p>Ser o maior Produtor de sensores de temperatura para monitoramento das frutas, ser uma referência nacional, obter
+      um alto reconhecimento em tecnologia avançada, <br> e por equipes capacitadas, comprometidas com a qualidade total
+      e a
+      satisfação dos clientes.
+    </p>
+    <h4>Valores:</h4>
+
+
+    Inovação; <br>
+    Confiabilidade; <br>
+    Preocupação com a satisfação do cliente; <br>
+    Eficiência; <br>
+    Eficácia; <br>
+    Proatividade; <br>
+
+  </div>
+
+
+  <!--Tela de cadastro de novos clientes-->
+  <h2 id="cadastro-box1">Faça seu cadastro</h2>
+
+  <div id="cadastro-box">
+    <div id="cadastro-box-interno">
+      <div id="cadastro-box-label">Cadastro</div>
+
+      <!--Campo cadastro do email-->
+      <div class="input-div" id="input-email">
+        <input type="text" value="" placeholder="Email" />
+      </div>
+
+      <!--Campo cadastro do usuário-->
+      <div class="input-div" id="input-usuario">
+        <input type="text" value="" placeholder="Usuário " />
+      </div>
+
+      <!-- campo cadastro da senha-->
+      <div class="input-div" id="input-senha">
+        <input type="password" value="" placeholder="Senha">
+      </div>
+
+      <!-- campo confirmar senha-->
+      <div class="input-div" id="input-senha">
+        <input type="password" value="" placeholder="Confirmar senha">
+      </div>
+
+      <!-- botões do cadastro-->
+      <div id="botao" class="botao">Cadastrar</div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <!--Tela de login de cliente registrados-->
+    <h2>Faça seu login</h2>
+
+    <!-- Caixa de Login-->
+    <div id="login-box">
+      <div id="login-box-interno">
+        <div id="login-box-label">Login</div>
+
+        <!--Campo de Usuario e senha-->
+        <div class="input-div" id="input-usuario">
+          <input type="text" value="" placeholder="Usuário ou Email" />
+        </div>
+
+        <!-- campo senha-->
+        <div class="input-div" id="input-senha">
+          <input type="password" value="" placeholder="Senha">
+        </div>
+
+        <!-- botões do login-->
+        <div id="botoes" class="botoes">
+          <div id="botao" class="botao">Login</div>
+          <div id="recuperar" class="botao">Recuperar senha</div>
+          <div id="lembra-senha"><input type="checkbox">Lembrar senha</div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+
+</script>

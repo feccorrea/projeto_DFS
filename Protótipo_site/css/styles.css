@@ -1,0 +1,113 @@
+
+
+
+
+/*Reset das margens*/
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+/*remoção do botão da tela*/
+#btn_menu{
+  display: none;
+}
+/*Cor de fundo do Menu de opçôes*/
+header{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100;Blue+Gloss+%232 */
+background: rgb(59,103,158); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  font-weight: 600;
+}
+/*Detalhes visuais do menu*/
+header label{
+    color: aliceblue;
+    font-size: 20px;
+    display: block;
+    padding: 5px 10x;
+    width: 20px;
+    border-right: 1px solid rgba(157, 199, 204, 0.479);
+    display: none;
+}
+/* alterar cor ao passar mouse por cima*/
+header label:hover{
+    background-color: rgb(52, 185, 202);
+
+}
+/*configs do menu/posição/transições*/
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  transition: all .5s;
+}
+/*visual das opções do menu*/
+.menu li a{
+  color:white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  border-right: 1px solid white;
+}
+
+/*Alterar cor ao passar o mouse nas opções do menu*/
+.menu li a:hover{
+  background-color: gray;
+}
+/*Para o menu ficar responsivo*/
+@media(max-width: 768px){
+  /*alterações visuais dos botões de menu em modo responsivo*/
+    header label{
+      display: block;
+          }
+          
+    .menu ul{
+      position: absolute;
+      background-color: rgb(52, 185, 202);
+      width: 70%;
+      flex-direction: column;
+      margin-left: -70%;
+    }
+    .menu li a{
+      border-top: 1px solid gray;
+    }
+
+    #btn_menu:checked ~ .menu ul{
+      margin-left: 0;
+    }
+}
+
+/*Deslocamento dos paragráfos*/
+p {
+text-indent: 2em;
+}
+/*Texto alinhado ao centro da página*/
+h3{
+  text-align: center;
+}
+
+/*Configuração para o lado esquerdo da tela do menu Sobre*/
+#sobre-box{
+  float: center;
+	width: 740px;
+	margin: 0 0 0 20px;
+  display: inline;
+  
+}
+/*Deslocament do cadastro para baixo/Evitar conflito ou sobreposição com o Sobre*/
+#cadastro-box1{
+  clear: left;
+}
+
+body {
+  text-align: center; color:#006666;
+}
+
+img { margin-right: 90%; 
+     height: 100px;
+}
+ 
